@@ -1,0 +1,125 @@
+// main:..//style.less
+
+
+
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background: #FFEBF1;
+
+    .footer__wrapper {
+        width: 1100px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 100px;
+
+        .footer__address,
+        .footer__email {
+            a {
+                margin-top: 30px;
+                color: #BB1E6A;
+                text-decoration: none;
+                font-size: 17px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .address__icon,
+            .email__icon {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-around;
+
+            }
+        }
+    }
+
+    .footer__bottom {
+        margin-top: 90px;
+        text-align: center;
+
+        p {
+
+            color: #aaaaaa;
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .footer {
+        .footer__wrapper {
+            width: 800px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        padding-top: 45px;
+
+        .footer__wrapper {
+            width: 560px;
+            flex-direction: column;
+
+            div,
+            a {
+                margin-bottom: 30px;
+            }
+        }
+
+        .footer__bottom {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .footer {
+        .footer__wrapper {
+            width: 245px;
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .footer {
+        .footer__wrapper {
+            width: 175px;
+
+            .footer__address,
+            .footer__email {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .footer__bottom {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .footer {
+        .footer__wrapper {
+            width: 120px;
+
+            .footer__address,
+            .footer__email {
+
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
